@@ -109,7 +109,10 @@
           "events/**",
           "error/**",
           "models/**",
-          "proto/**"
+          "proto/**",
+          ".governance/manifest.json",
+          "weboql/**",
+          "tests/**"
         ]
       },
       "interfaces": {

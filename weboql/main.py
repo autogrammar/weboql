@@ -125,6 +125,11 @@ async def health_check():
 
 
 def run():
+    try:
+        from .autoupdate import check_for_updates
+        check_for_updates("weboql")
+    except Exception:
+        pass
     """Entry point for weboql-server console script."""
     uvicorn.run(app, host=settings.web_host, port=WEB_PORT)
 
